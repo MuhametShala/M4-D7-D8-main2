@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>E-Commerce | Details</title>
+</head>
+<body>
+    <section>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand ps-5" href="#">Back-Office Edit</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link px-5" aria-current="page" href="index.html#">Back to Web Page</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                
+              </form>
+            </div>
+          </div>
+        </nav>
+     </section>
+
+    <!-- mia row dove appendo -->
+    <section class="main-details">
+        <div class="dettaglio" id="my-row">
+           
+        </div>
+    </section>
+
+    <!-- modale per modifiche product -->
+    <section>
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Edit your Product Info</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                        <div class="modal-body">
+                            <form class="row g-3">
+                                <div class="mb-6">
+                                    <label for="formGroupExampleInput" class="form-label">Nome Prodotto</label>
+                                    <input type="text" class="form-control" id="name-input" placeholder="Inserire nome del prodotto">
+                                </div>
+                                <div class="mb-6">
+                                    <label for="formGroupExampleInput2" class="form-label">Descrizione del prodotto</label>
+                                    <input type="text" class="form-control" id="desc-input" placeholder="Inserire descrizione del prodotto">
+                                </div>
+                                <div class="mb-12">
+                                    <label for="formGroupExampleInput5" class="form-label">Immagine del prodotto</label>
+                                    <input type="text" class="form-control" id="imageUrl" placeholder="Inserisci l'url dell'imagine prodotto">
+                                </div>
+                                <div class="mb-6">
+                                    <label for="formGroupExampleInput3" class="form-label">Brand del prodotto</label>
+                                    <input type="text" class="form-control" id="brand-input" placeholder="Inserisci il brand del prodotto">
+                                </div>
+                                <div class="mb-6">
+                                    <label for="formGroupExampleInput4" class="form-label">Prezzo del prodotto</label>
+                                    <input type="text" class="form-control" id="price-input" placeholder="Inserisci il prezzo del prodotto">
+                                </div>
+                                <div class="col-sm-2">
+                                    <button class="btn btn-primary" id="edit-btn" type="button">
+                                        <span class="text-center">Confirm Edit</span>
+                                    </button>
+                                </div>
+                                <div class="alert alert-danger d-none" id="empty-fields" role="alert">
+                                    Valorizza tutti i campi richiesti!
+                                </div>
+                            </form>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="detail.js"></script>
+</body>
+</html>
