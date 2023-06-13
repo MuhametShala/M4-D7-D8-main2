@@ -73,8 +73,8 @@ if (window.location.search) {
 
         //btn Delete
         const delBtn = document.createElement('button');
-        delBtn.classList.add('btn-danger', 'btn-small', "mx-1", 'btn'); 
-        delBtn.innerText = "Delete";
+        delBtn.classList.add("btn-danger", "btn-small", "p-3","ms-2", "btn"); 
+        delBtn.innerText = "Delete Product";
 
         myDiv1.append(myCard);
         myCard.append(cardImg, myCardBody);
@@ -96,7 +96,9 @@ if (window.location.search) {
         myDiv1.appendChild(cardImg);
         myDiv2.appendChild(myCardBody);
         
-        myCardBody.append(myCardName, myCardBrand, myCardDesc, myCardPrice, editBtn);
+        myCardBody.append(myCardName, myCardBrand, myCardDesc, myCardPrice, editBtn, delBtn);
+        myRow.classList.add("d-flex", "justify-content-center", "align-items-center");
+        myDiv1.classList.add("mb-2");
         myRow.append(myDiv1, myDiv2);
     }
 

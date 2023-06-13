@@ -87,11 +87,11 @@ function createCardTemplate(element) {
     myDiv.classList.add("col-12", "col-sm-6", "col-md-4", "col-lg-3", "p-3", "d-flex", "justify-content-center", "mt-5"); 
     
     const myCard = document.createElement("div");
-    myCard.classList.add("card");
+    myCard.classList.add("card", "d-flex", "align-items-center");
     
     const cardImg = document.createElement("img");
     cardImg.src = element.imageUrl;
-    cardImg.classList.add("card-img-top", "h-100");
+    cardImg.classList.add("card-img-top", "h-100", "imgBg");
     
     const myCardBody = document.createElement("div");
     myCardBody.classList.add("card-body-2");
@@ -115,7 +115,7 @@ function createCardTemplate(element) {
     const moreInfo = document.createElement("a");
     moreInfo.href= "details.html?product=" + productId;
     moreInfo.innerText = "Click for Details";
-    moreInfo.classList.add("text-primary");
+    moreInfo.classList.add("text-dark", "text-decoration-none", "bg-primary");
 
 
     myDiv.append(myCard);
